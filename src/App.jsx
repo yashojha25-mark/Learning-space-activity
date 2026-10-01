@@ -79,6 +79,8 @@ function StatCard({ label, value, helper }) {
             <small>{helper}</small>
         </article>
     );
+
+    
 }
 
 function Dashboard({ complaints }) {
@@ -90,7 +92,6 @@ function Dashboard({ complaints }) {
             resolved: complaints.filter((item) => item.status === "Resolved").length
         };
     }, [complaints]);
-
     return (
         <section id="dashboard" className="dashboard">
             <div className="page-heading">
